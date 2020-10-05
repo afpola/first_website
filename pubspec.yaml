@@ -1,0 +1,13 @@
+name: chords
+description: Chords
+version: 0.0.1
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+dependencies:
+  angular: ^6.0.0-alpha+1
+dev_dependencies:
+  angular_test: ^2.4.0
+  build_runner: ^1.9.0
+  build_test: ^0.10.3+1
+  build_web_compilers: ^2.10.0
+  test: ^1.14.0
