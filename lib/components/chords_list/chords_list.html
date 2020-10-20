@@ -1,0 +1,10 @@
+<ul class="chords">
+    <li *ngFor="let chord of chords"
+        [class.selected]="chord === selected"
+        (click)="selected = chord">
+      <span class="badge">{{chord.id}}</span> 
+      <span>{{chord.artistname}}</span>
+      <span> - </span>
+      <span>{{chord.songtitle}}</span>
+    </li>
+</ul>
