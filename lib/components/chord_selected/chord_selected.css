@@ -1,0 +1,19 @@
+.myDiv {
+    border: 5px outset #cfd8dc;
+    background-color: #eee;
+    text-align: center;
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 14.5em;
+    padding-bottom: 1em;
+}
+
+.myDiv #name {
+    text-decoration: underline;
+}
+
+.myDiv .h2 {
+    text-decoration-color: black;
+    text-decoration: underline;
+}

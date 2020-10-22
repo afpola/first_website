@@ -2,4 +2,6 @@
 
 
 
-<my-chordslist #chords_list></my-chordslist>
+<my-chordslist #chordslist> </my-chordslist>
+
+<my-chord-selected *ngIf="chordslist.selected != null" [model]="chordslist.selected"></my-chord-selected>

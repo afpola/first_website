@@ -1,17 +1,9 @@
 import 'package:angular/angular.dart';
-
-class Chord {
-  final int id;
-  String artistname;
-  String songtitle;
-  String chordfile;
-
-  Chord(this.id, this.artistname, this.songtitle, this.chordfile);
-}
+import '../chord/chord.dart';
 
 final listOfChords = <Chord>[
-  Chord(1, 'Elliott Smith', 'The real estate', 'InsertLinkToFileHere'),
-  Chord(2, 'The Rolling Stones', 'Waiting on a friend', 'InsertLinkToFileHere'),
+  Chord(1, 'Elliott Smith', 'The real estate', 'chordtest.txt'),
+  Chord(2, 'The Rolling Stones', 'Waiting on a friend', 'chordtest.txt'),
 ];
 
 @Component(
