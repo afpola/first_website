@@ -3,9 +3,8 @@
         [class.selected]="chord === selected"
         (click)="selected = chord">
       <span class="badge">{{chord.id}}</span> 
-      <span>{{chord.artistname}}</span>
-      <span> - </span>
-      <span>{{chord.songtitle}}</span>
+      <span>{{chord.artistname}} - {{chord.songtitle}}</span>
+      
       
     </li>
 </ul>

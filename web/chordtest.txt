@@ -1,5 +1,0 @@
-A	B	C
-asdf	asdf	asdf
-
-D	E	F
-asdf	ASDF	ASDF

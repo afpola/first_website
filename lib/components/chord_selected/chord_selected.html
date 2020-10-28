@@ -1,16 +1,88 @@
 <div class="myDiv">
-    <p id="artistname">Name: {{model.artistname}}</p>
-    <p>Song title: {{model.songtitle}}</p>
-    <!--img src="{{model.photoLink}}" width="175" height="250"-->
+    <p>{{model.artistname}} - {{model.songtitle}}</p>
+    <p class="row" *ngFor="let row of model.data">
+        <div class="cell" *ngFor="let cell of row.cells">
+            <div class="note">{{cell.note}}&nbsp;&nbsp;</div>
+            <div class="lyric">{{cell.lyric}}&nbsp;</div>
+        </div>
+    </p>
 </div>
+    
 
+<pre class="myChord">
+the real estate - elliott smith
+tabed by alexander rex - june 2013
 
-<!-- For business card (compare):
+standard tuning
+ 
+D  x00232  Em 022000
+C  x32010  C* x42000
+F# 244322  Bm x24432
+ 
+  D riff        Em riff
+e-2--2-3-2--  e-0--0-----0--
+H-3--3-3-3--  H-0--0-----0--
+G-2--2-2-2--  G-0--0-----0--
+D-0--0-0-0--  D-2--2-----2--
+A-0--0-0-0--  A-2--2-0/2-2--
+E-----------  E-0--0-----0--
+ 
+D riff Em riff C C*
+D riff Em riff C C* F#
+ 
+Bm                D
+Dogs eat dogs eat dogs Move through
+        Bm                    D
+There's rain inside your house   For our moods
+Bm                   D
+I don't want to live here Even if it's 
+Bm        D
+all we've got
+Bm             D
+Mr. Big got an expectation
+Bm                    D
+Thinks he thinks he's my education
+         Bm                               D
+He said, "Don't you think we could make a couple of G's."
+              Bm                  D           Bm
+Why don't you go for yourself and take what's coming to you?
+ 
+D riff Em riff C C*
+D riff Em riff C C* F#
+ 
+Bm                    D
+I didn't want to go inside 
+       Bm                    D
+It's a burned out party It's killing my pride
+Bm                     D
+Just want to live with her again - Can we do that?
+Bm                        D
+Even if we can't stand to Sleep in the same bed
+Bm             D
+Mr. Big got an expectation
+Bm                    D
+Thinks he thinks he's my education
+         Bm                               D
+He said, "Don't you think we could make a couple of G's."
+              Bm                  D           Bm
+Why don't you go for yourself and take what's waiting for you?
+ 
+D riff Em riff C C*
+D riff Em riff C C*
+D riff                Em            riff
+Fetched the mail at a quarter till 1
+C                  C*
+I think the mailman thinks I'm
+D riff        Em riff
+dumb
+C                   C*        F#
+I think the mailman thinks me dumb
+ 
+Bm D (8x)
+ 
+D riff Em riff C C*
+D riff Em riff C C*
+D riff Em riff C C*
+D riff Em riff C C* F# Bm
+</pre>
 
-<div class="myDiv">
-    <p id="name">Name: {{model.name}}</p>
-    <p>Title: {{model.title}}</p>
-    <img src="{{model.photoLink}}" width="175" height="250">
-</div>
-
--->

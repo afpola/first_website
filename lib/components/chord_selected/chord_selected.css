@@ -1,19 +1,39 @@
 .myDiv {
     border: 5px outset #cfd8dc;
     background-color: #eee;
-    text-align: center;
     margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 14.5em;
+    width: 40em;
     padding-bottom: 1em;
 }
 
-.myDiv #name {
-    text-decoration: underline;
+.myDiv p.row {
 }
 
-.myDiv .h2 {
-    text-decoration-color: black;
-    text-decoration: underline;
+.myDiv p.row div.cell {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.myDiv p.row div.cell div {
+    height: 16px;
+}
+
+.myDiv p.row div.cell div.note {
+}
+
+.myDiv p.row div.cell div.lyric {
+    color: rgb(80, 53, 53);
+}
+
+.myDiv p {
+    margin: 0.5em;
+}
+
+.myChord {
+    border: 5px outset #cfd8dc;
+    background-color: #eee;
+    margin: 0 0 2em 0;
+    width: 40em;
+    padding-bottom: 1em;
+    padding-left: 1em;
 }

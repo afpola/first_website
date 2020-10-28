@@ -1,7 +1,6 @@
 import 'package:angular/angular.dart';
 
-import '../chord/chord.dart';
-import '../chords_list/chords_list.dart';
+import '../../chord.dart';
 
 @Component(
     selector: 'my-chord-selected',
