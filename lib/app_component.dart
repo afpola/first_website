@@ -1,12 +1,12 @@
 import 'package:angular/angular.dart';
-import 'components/chords_list/chords_list.dart';
-import 'components/chord_selected/chord_selected.dart';
+import 'components/song_list/song_list_component.dart';
+import 'components/song_selected/song_selected_component.dart';
 
 @Component(
   selector: 'app-component',
   templateUrl: 'app_component.html',
-  directives: [coreDirectives, ChordsListComponent, ChordSelectedComponent],
+  directives: [coreDirectives, SongListComponent, SongSelectedComponent],
 )
 class AppComponent {
-  var name = 'Chords';
+  var name = 'songs';
 }

@@ -1,10 +1,10 @@
-class Chord {
+class Song {
   final int id;
   String artistname;
   String songtitle;
   List<Row> data;
 
-  Chord(this.id, this.artistname, this.songtitle, this.data);
+  Song(this.id, this.artistname, this.songtitle, this.data);
 }
 
 class Row {

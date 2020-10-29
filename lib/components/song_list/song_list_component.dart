@@ -1,8 +1,8 @@
 import 'package:angular/angular.dart';
-import '../../chord.dart';
+import '../../song.dart';
 
-final listOfChords = <Chord>[
-  Chord(1, 'Elliott Smith', 'The real estate', [
+final listOfSongs = <Song>[
+  Song(1, 'Elliott Smith', 'The real estate', [
     Row([Cell('Bm', 'Dogs eat dogs eat'), Cell('D', 'dogs Move through')]),
     Row([
       Cell('', 'There`s'),
@@ -13,12 +13,24 @@ final listOfChords = <Chord>[
     Row([Cell('Bm', 'I don`t want to live here'), Cell('D', 'Even if it`s')]),
     Row([Cell('Bm', 'all we`ve'), Cell('D', 'got')])
   ]),
-  Chord(2, 'The Rolling Stones', 'Waiting on a friend', [
+  Song(2, 'The Rolling Stones', 'Waiting on a friend', [
     Row([Cell('Cookiecookie', 'cookiecookie')]),
     Row([]),
     Row([])
   ]),
-  /*Chord(3, 'Nada Surf', 'Blizzard of 77', [
+];
+
+@Component(
+    selector: 'my-song-list',
+    templateUrl: 'song_list_component.html',
+    styleUrls: ['song_list_component.css'],
+    directives: [coreDirectives])
+class SongListComponent {
+  List<Song> songs = listOfSongs;
+  Song selected;
+}
+
+/*Chord(3, 'Nada Surf', 'Blizzard of 77', [
     Row([Cell('Cookiecookie', 'cookiecookie')]),
     Row([]),
     Row([])
@@ -258,14 +270,3 @@ final listOfChords = <Chord>[
     Row([]),
     Row([])
   ]),*/
-];
-
-@Component(
-    selector: 'my-chordslist',
-    templateUrl: 'chords_list.html',
-    styleUrls: ['chords_list.css'],
-    directives: [coreDirectives])
-class ChordsListComponent {
-  List<Chord> chords = listOfChords;
-  Chord selected;
-}
