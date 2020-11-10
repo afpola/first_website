@@ -1,6 +1,7 @@
 import 'package:angular/angular.dart';
 
-import '../../song.dart';
+import '../../models/song.dart';
+
 
 @Component(
     selector: 'my-song-selected',

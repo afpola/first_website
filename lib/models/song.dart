@@ -1,10 +1,12 @@
 class Song {
   final int id;
-  String artistname;
-  String songtitle;
+  String artist;
+  String title;
+  String chords;
   List<Row> data;
+  
 
-  Song(this.id, this.artistname, this.songtitle, this.data);
+  Song(this.id, this.artist, this.title, this.chords, this.data);
 }
 
 class Row {
@@ -16,5 +18,8 @@ class Row {
 class Cell {
   String note;
   String lyric;
+  
   Cell(this.note, this.lyric);
 }
+
+

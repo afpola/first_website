@@ -1,15 +1,22 @@
 <div class="myDiv">
-    <p>{{model.artistname}} - {{model.songtitle}}</p>
-    <p class="row" *ngFor="let row of model.data">
-        <div class="cell" *ngFor="let cell of row.cells">
-            <div class="note">{{cell.note}}&nbsp;&nbsp;</div>
-            <div class="lyric">{{cell.lyric}}&nbsp;</div>
-        </div>
-    </p>
-</div>
-    
 
-<pre class="mySong">
+  <p class="title">{{model.artist}} - {{model.title}}</p>
+  <p class="chords">Chords used: {{model.chords}}</p>
+
+  <p class="row"
+     *ngFor="let row of model.data">
+    <div class="cell"
+         *ngFor="let cell of row.cells">
+      <div class="note">{{cell.note}}&nbsp;&nbsp;</div>
+      <div class="lyric">{{cell.lyric}}&nbsp;</div>
+    </div>
+  </p>
+</div>
+
+
+
+
+<!--pre class="mySong">
 the real estate - elliott smith
 tabed by alexander rex - june 2013
 
@@ -84,5 +91,4 @@ D riff Em riff C C*
 D riff Em riff C C*
 D riff Em riff C C*
 D riff Em riff C C* F# Bm
-</pre>
-
+</pre-->
