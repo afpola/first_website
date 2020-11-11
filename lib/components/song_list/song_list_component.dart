@@ -3,7 +3,7 @@ import '../../models/song.dart';
 /*import '../../models/chord.dart';*/
 
 final listOfSongs = <Song>[
-  Song(1, 'Elliott Smith', 'The real estate', 'D: x00232, Bm: x24432',[
+  Song(1, 'Elliott Smith', 'The real estate', 'Bm: x24432, D: x00232,',[
     Row([Cell('Bm', 'Dogs eat dogs eat'), Cell('D', 'dogs Move through')]),
     Row([
       Cell('', 'There`s'),
