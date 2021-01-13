@@ -9,17 +9,23 @@
 }
 
 .myDiv p.title {
-    margin: 1em 0 0 0;
+    margin: 1em 0 2em 0;
     font-size: x-large;
 
 }
 
+.myDiv p.chords-headline {
+    margin: 1em 0 0 0;
+    font-size: large;
+    font-style: italic;
+}
+
 .myDiv p.chords {
-    margin: 2em 0 2em 0;
+    margin: 1em 0 3em 0;
 
 }
 
-.myDiv p.row {}
+/*.myDiv p.row {} */
 
 .myDiv p.row div.cell {
     display: inline-block;
@@ -30,13 +36,14 @@
     height: 16px;
 }
 
-.myDiv p.row div.cell div.note {}
+/* .myDiv p.row div.cell div.note {} */
 
 .myDiv p.row div.cell div.lyric {
     color: rgb(80, 53, 53);
+    margin: 0.5em 0 0.5em 0;
 }
 
-.myDiv p {}
+/* .myDiv p {} */
 
 .mySong {
     border: 5px outset #cfd8dc;
@@ -45,4 +52,9 @@
     width: 40em;
     padding-bottom: 1em;
     padding-left: 1em;
+}
+
+.myDiv p.button {
+    margin: 2em 0 1em 0;
+
 }

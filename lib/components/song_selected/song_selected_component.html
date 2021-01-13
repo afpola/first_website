@@ -1,7 +1,8 @@
 <div class="myDiv"
      *ngIf="model != null">
   <p class="title">{{model.artist}} - {{model.title}}</p>
-  <p class="chords">Chords used: {{model.chords}}</p>
+  <p class="chords-headline">Chords used</p>
+  <p class="chords">{{model.chords}}</p>
 
   <p class="row"
      *ngFor="let row of model.data">
@@ -11,9 +12,9 @@
       <div class="lyric">{{cell.lyric}}&nbsp;</div>
     </div>
   </p>
-
-  <button (click)="goBack()">Back to song-list</button>
-
+  <p class="button">
+    <button (click)="goBack()">Back to song-list</button>
+  </p>
 </div>
 
 
