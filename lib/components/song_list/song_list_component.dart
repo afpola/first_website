@@ -17,9 +17,12 @@ import '../../services/song_service.dart';
     styleUrls: ['song_list_component.css'],
     directives: [coreDirectives, NgClass, NgIf, routerDirectives])
 class SongListComponent {
-  SongListComponent(this.songService);
+  SongListComponent(this.songService, this._location);
 
   final SongService songService;
+  final Location _location;
+
+void goBack() => _location.back();
 }
 
 //Added last row

@@ -5,12 +5,15 @@
 
   <p class="row"
      *ngFor="let row of model.data">
-  <div class="cell"
-       *ngFor="let cell of row.cells">
-    <div class="note">{{cell.note}}&nbsp;&nbsp;</div>
-    <div class="lyric">{{cell.lyric}}&nbsp;</div>
-  </div>
+    <div class="cell"
+         *ngFor="let cell of row.cells">
+      <div class="note">{{cell.note}}&nbsp;&nbsp;</div>
+      <div class="lyric">{{cell.lyric}}&nbsp;</div>
+    </div>
   </p>
+
+  <button (click)="goBack()">Back</button>
+
 </div>
 
 

@@ -11,9 +11,10 @@ import '../../models/song.dart';
     directives: [coreDirectives])
 class SongSelectedComponent implements OnActivate {
   final SongService songService;
+  final Location _location;
 
   Song model;
-  SongSelectedComponent(this.songService);
+  SongSelectedComponent(this.songService, this._location);
 
   @override
   void onActivate(RouterState previous, RouterState current) {
@@ -28,4 +29,5 @@ class SongSelectedComponent implements OnActivate {
     // Same end result as the loop above
     // model = songService.data.firstWhere((song) => song.id.toString() == songId);
   }
+  void goBack() => _location.back();
 }
