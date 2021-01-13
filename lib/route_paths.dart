@@ -1,6 +1,6 @@
 import 'package:angular_router/angular_router.dart';
 
 class RoutePaths {
-  static final start = RoutePath(path: 'start');
-  static final second = RoutePath(path: 'second');
+  static final songs = RoutePath(path: 'songs', useAsDefault: true);
+  static final song = RoutePath(path: 'songs/:id');
 }

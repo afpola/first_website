@@ -1,10 +1,8 @@
+<h2>Songs</h2>
 <ul class="songs">
-  <li *ngFor="let song of songs"
-      [class.selected]="song === selected"
-      (click)="selected = song">
+  <li routerLink="songs/{{song.id}}"
+      *ngFor="let song of songService.data">
     <span class="badge">{{song.id}}</span>
     <span>{{song.artist}} - {{song.title}}</span>
-
-
   </li>
 </ul>

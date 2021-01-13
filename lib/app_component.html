@@ -1,8 +1,2 @@
-<h1>{{name}}</h1>
-
-
-
-<my-song-list #songlist> </my-song-list>
-
-<my-song-selected *ngIf="songlist.selected != null"
-                  [model]="songlist.selected"></my-song-selected>
+<h1>My Song APP</h1>
+<router-outlet [routes]="Routes.all"></router-outlet>
