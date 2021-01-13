@@ -32,10 +32,13 @@ final listOfSongs = <Song>[
     selector: 'my-song-list',
     templateUrl: 'song_list_component.html',
     styleUrls: ['song_list_component.css'],
-    directives: [coreDirectives])
+    directives: [coreDirectives, NgClass, NgIf])
 class SongListComponent {
   List<Song> songs = listOfSongs;
   Song selected;
   
+
 }
+
+//Added last row
 
