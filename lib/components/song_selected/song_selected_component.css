@@ -10,7 +10,7 @@
 
 .myDiv p.title {
     margin: 1em 0 2em 0;
-    font-size: x-large;
+    font-size: 125%;
 
 }
 
@@ -39,7 +39,7 @@
 /* .myDiv p.row div.cell div.note {} */
 
 .myDiv p.row div.cell div.lyric {
-    color: rgb(80, 53, 53);
+    color: rgb(45, 92, 124);
     margin: 0.5em 0 0.5em 0;
 }
 
